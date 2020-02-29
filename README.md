@@ -1,8 +1,8 @@
 # UX portfolio template 1920
 
-## Name:
+## Name: Edin Bloem
 
-## Group:
+## Group: 1AVDA
 
 ## Getting Started
 
