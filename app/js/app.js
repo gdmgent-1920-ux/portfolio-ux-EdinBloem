@@ -12,7 +12,7 @@ App = {
   */
  init: () => {
    // the assignment numbers
-   const assignmentNumbers = [ 1, 2, 3, 4, 5 ];
+   const assignmentNumbers = [ 1, 2, 3,];
 
    // create the users name
    const name = `${data.general.firstName} ${data.general.lastName}`;
