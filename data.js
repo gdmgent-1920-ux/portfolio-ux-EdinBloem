@@ -84,12 +84,12 @@ const data = {
         {
             "text": "Adobe XD (met Wireframes)",
             "title": "Mijn Adobe XD document met de wireframes van mijn applicatie",
-            "href": "./assignments/assignment3/documents/a3-wireframes.xd",
+            "href": "./assignments/assignment3/documents/UX_WireframeG.xd",
         },
         {
             "text": "Adobe XD (met Visual Designs)",
             "title": "Mijn Adobe XD document voor de visual designs van mijn applicatie",
-            "href": "./assignments/assignment3/documents/a3-visual-designs.xd",
+            "href": "./assignments/assignment3/documents/UX_VisualDesign.xd",
         },
         {
             "text": "Website",
