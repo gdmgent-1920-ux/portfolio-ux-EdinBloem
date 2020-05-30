@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px; }
+
+html, body {
+  height: 100%; }
+
+body {
+  position: relative;
+  font-family: 'Muli', sans-serif; }
+
+#background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1; }
+  #background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; }
+
+header ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none; }
+  header ul li {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    cursor: pointer; }
+    header ul li a {
+      all: inherit; }
+    header ul li a:visited {
+      color: unset; }
+header nav.menu-hidden .nav-items {
+  display: none; }
+
+#pagePodcast header nav .nav-items li {
+  color: black; }
+
+main h1 {
+  font-size: 7rem;
+  font-weight: 800;
+  line-height: 97%; }
+  main h1 span {
+    color: white; }
+    main h1 span:first-child {
+      display: block;
+      opacity: .7;
+      margin-bottom: 20px; }
+
+.podcasts {
+  --h: 80vh;
+  --gutter: 30px;
+  max-height: var(--h);
+  width: 100%; }
+  .podcasts h2 {
+    position: absolute;
+    left: 15%;
+    font-weight: 900;
+    font-size: calc(3.8rem + 3.9vw);
+    color: rgba(36, 119, 214, 0.315);
+    line-height: 75%;
+    transform: translateY(-90px);
+    z-index: 1; }
+  .podcasts-wrapper {
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    width: 50%;
+    height: var(--h); }
+  .podcasts-column {
+    width: 50%;
+    height: var(--h);
+    overflow-y: hidden; }
+    .podcasts-column:first-child {
+      border-right: calc(var(--gutter)/2) solid white; }
+      .podcasts-column:first-child .podcast-item:first-child {
+        margin-top: 75px; }
+    .podcasts-column:last-child {
+      border-left: calc(var(--gutter)/2) solid white; }
+  .podcasts .podcast-item {
+    width: 100%;
+    margin-bottom: var(--gutter); }
+    .podcasts .podcast-item:last-child {
+      margin-bottom: 0px; }
+    .podcasts .podcast-item-thumbnail {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      object-position: center; }
+  .podcasts .podscast-scroll-control {
+    --d: 30px;
+    position: absolute;
+    top: 50%;
+    left: calc(var(--d)/2*-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c9c9c9;
+    border-radius: 120px;
+    border: none;
+    width: var(--d);
+    height: var(--d); }
+    .podcasts .podscast-scroll-control:focus {
+      outline: none;
+      box-shadow: none; }
+    .podcasts .podscast-scroll-control.up {
+      top: unset;
+      left: unset;
+      right: calc(var(--d)/2*-1);
+      bottom: 10%; }
+
+.category {
+  --h: 80vh;
+  --gutter: 15px;
+  --basis: 2;
+  max-height: var(--h);
+  width: 100%; }
+  .category h2 {
+    position: absolute;
+    font-weight: 900;
+    font-size: calc(3.8rem + 3.9vw);
+    color: rgba(36, 119, 214, 0.315);
+    transform: translateY(-159px);
+    z-index: 1; }
+  .category-wrapper {
+    position: relative;
+    display: flex;
+    margin-left: auto; }
+  .category-column {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll; }
+    .category-column:first-child {
+      border-right: calc(var(--gutter)/2) solid white; }
+    .category-column:last-child {
+      border-left: calc(var(--gutter)/2) solid white; }
+  .category-item {
+    flex-basis: 200px;
+    margin-right: var(--gutter); }
+    .category-item:last-child {
+      margin-bottom: 0px; }
+    .category-item-thumbnail {
+      height: 200px;
+      width: 100vw;
+      object-fit: cover;
+      object-position: center; }
+  .category .category-scroll-control {
+    --d: 30px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c9c9c9;
+    border-radius: 120px;
+    border: none;
+    width: var(--d);
+    height: var(--d); }
+    .category .category-scroll-control:focus {
+      outline: none;
+      box-shadow: none; }
+    .category .category-scroll-control.up {
+      top: 30px; }
+    .category .category-scroll-control.up {
+      top: 30px; }
+
+@media (min-width: 768px) {
+  header ul {
+    flex-direction: row; }
+  header nav .nav-button {
+    display: none; }
+  header nav.menu-hidden .nav-items {
+    display: flex; }
+
+  .category-item-thumbnail {
+    width: 300px; } }
+
+/*# sourceMappingURL=base.css.map */
